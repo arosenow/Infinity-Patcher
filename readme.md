@@ -1,6 +1,6 @@
 Executable version for windows on the right hand side under releases
 
-This tool inserts labels into Infinity Engine mods to make them compoatible with the mod manager Project Infinity. 
+This tool inserts labels into Infinity Engine mods to make them compatible with the mod manager Project Infinity. 
 It appends the Labels = GloballyUnique to the ini, or creates the ini if necessary, to make my favourite mods compatible.
 This is especially helpful for big mods such as Sword Coast Stratagems or Tweaks n tricks.
 
