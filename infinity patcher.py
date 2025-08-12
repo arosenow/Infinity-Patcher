@@ -61,7 +61,9 @@ def on_button_click():
 
 				check_begin = check_b and not check_nb
 
-				check_l = ('LABEL ~' in i )
+				check_l = ('LABEL ~' in i or 
+			   		re.search(r" LABEL \w", ' ' + i) 
+					)
 
 				if check_begin: modules.append(i0)
 				if check_l: labels.append(i0)
