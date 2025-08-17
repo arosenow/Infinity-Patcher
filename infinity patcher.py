@@ -39,6 +39,9 @@ def on_button_click():
 		if file == 'setup-' + modname+".tp2": 
 			modexists = 2
 			modtp2 = 'setup-' + modname+".tp2"
+		if file == 'Setup-' + modname+".tp2": 
+			modexists = 2
+			modtp2 = 'Setup-' + modname+".tp2"
 		if file == modname+".ini": inifound = 1
 		
 
@@ -51,6 +54,8 @@ def on_button_click():
 				i = i.lstrip()
 
 				if i[:1] == '/': continue
+				br = i.find('/')
+				if br > 0: i = i[:br]
 
 				i_n = (lines[min(len(lines)-1,i0+1)]).lstrip()
 
